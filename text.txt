@@ -1,0 +1,72 @@
+We will use simple HTML, CSS, and make all the components work using basic JavaScript functions. To display buttons and numbers, we will use HTML, and add some beautification to them using CSS. To make the buttons perform the respective functions we will use JavaScript. The main function is eval(), which is a global JS function that solves JS codes. The display() function will display the selected number on the calculator screen. Note that the program will work only for mouse events.
+
+Question Rewritten:
+We are going to build a calculator.  We will use HTML and JavaScript.  The calculator will have buttons from 0 - 9, +, -, *, ., / and an =.  We will use the javascript eval() function to calculate the result of the equation.  We will create a display function that will output the result of the equation to the screen of the calculator.  This can be improved later on to output the curently typed in number.  The program only needs to work for mouse events.
+
+Question Breakdown:
+The eval() function takes in an expresion and evaluates the result of that expresion.  So we put in "2 + 2" it will return 4.  If we put in "new String("test")"it will return a new string object with test as it's value.  We can use this to evaluate all of the calculator expressions.
+
+Need:
+    JavaScript:
+        Variables
+            Global Variabels
+                expression, will hold the current expression
+                display, holds a reference to the display element of the page
+
+        Functions
+            onclick event for 0
+            onclick event for 1
+            onclick event for 2
+            onclick event for 3
+            onclick event for 4
+            onclick event for 5:
+                This function will add 5 to the expresion
+            onclick event for 6
+            onclick event for 7
+            onclick event for 8
+            onclick event for 9
+            onclick event for +
+            onclick event for -
+            onclick event for *
+            onclick event for /
+            onclick event for .
+            onclick event for =:
+                use the eval() function to get the value of the expression
+                send this to the display function
+                sets expresion to an empty string
+            display:
+                takes in a string
+                returns void
+                sets the innerHTML of the display element to the string that is passed to it.
+
+    HTML:
+        elements:
+            display, paragraph
+            div 4 paragraph tags
+            div 4 paragraph tags
+            div 4 paragraph tags
+            div 4 paragraph tags
+
+            
+
+
+Use Case:
+1.  User enters 5+5 and wants to get 10 returned.
+
+    Result:
+    The screen shows 10
+
+    Steps:
+    User presses the 5 button:
+        The onclick event for the five button is triggered.
+        The function is called
+        This function will add 5 to the expresion
+
+    User presses the + button:
+    User presses the 5 button:
+    User presses the = button:
+        The onclick event for the five button is triggered.
+        The equals function is called
+        The display function is called
+    The screen shows 10
+
